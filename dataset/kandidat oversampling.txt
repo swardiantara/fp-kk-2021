@@ -1,0 +1,18 @@
+Kandidat I-Geo
+States, City, Province, Islands, Republic
+
+Kandidat I-Per
+Pinochet, Montiglio, George, Laurent, Levy, Abbas, Felipe, Sharon, Ariel, Lavrov, Bush, Silva, Putin, Chavez, Rosales, Howard, Bashar, Nahles, Johnson, Morris, Davis, Robert, Karzai, Jalal
+
+Kandidat I-Org
+Agency, Council, Association, Company, Community, Committee, Department, Organization
+
+Jika berhasil, maka bisa diformalisasi dengan cara:
+
+Tentukan berapa entitas (I-tag) yang akan dioversampling:
+ misal: 3, yaitu 3 entitas dengan populasi terkecil
+Periksa persebaran nilai (kategori) pada tiap entitas
+ misal: pada I-org, nilai community hanya 1% dari total
+Pilih nilai pada masing-masing entitas sebagai kandidat value yang akan digunakan pada saat oversampling (return dict)
+
+Lakukan oversampling terhadap entitas (B-tag) yang berdiri sendiri dengan menambahkan entitas (I-tag) dibelakangnya secara random dari list yang sudah digenerate sebelumnya
